@@ -6,19 +6,19 @@ const photoPlayer = TweenMax.from(".db-player__image-bg", 1, {
 
 const namePlayerBg = TweenMax.from(".db-player__name", 1, { 
 	delay: .8,
-	x: -20,
+	x: -200,
 	opacity: 0,
 	ease: Expo.easeInOut
 });
 const strip = TweenMax.from(".db-player__strip", 1, { 
 	delay: .9,
-	x: 200,
+	x: 250,
 	opacity: 0,
 	ease: Expo.easeInOut
 });
 const teamPlayer = TweenMax.from(".db-player__name-team", 1, { 
 	delay: 1.5,
-	y: -20,
+	y: -30,
 	opacity: 0,
 	ease: Expo.easeInOut
 });
