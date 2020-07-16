@@ -1,0 +1,55 @@
+@import 'setings';
+@import 'fonts';
+@import "normalize";
+@import "layout";
+
+.db-player {
+	padding-top: 200px;
+	max-width: 600px;
+	margin: 0 auto;
+	
+	&__box {
+		display: flex;
+	}
+
+	&__image-bg {
+		background: $primary-color;
+		width: 200px;
+		height: 200px;
+	}
+
+	&__name {
+		background: $light-green;
+		margin-top: 149px;
+		border: 1px solid $black;
+		position: relative;
+		
+		& p {
+			text-transform: uppercase;
+			color: $primary-color;
+			font-size: 36px;
+			line-height: 42px;
+			padding: 5px 82px 2px 25px;
+		}
+	}
+	&__strip {
+		position: absolute;
+		left: 0;
+		height: 50px;
+		width: 6px;
+		border: 1px solid $black;
+		background: $orange;
+	}
+
+	&__name-team {
+		background: $primary-color;
+		padding: 24px 282px 24px 32px;
+	
+		& p {
+			font-size: 36px;
+			line-height: 42px;
+			white-space: pre;
+			color: $white;
+		}
+	}
+}
