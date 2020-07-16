@@ -7,6 +7,10 @@
 	padding-top: 200px;
 	max-width: 600px;
 	margin: 0 auto;
+
+	@media screen and (max-width: 728px) {
+	   padding: 120px 20px;
+}
 	
 	&__box {
 		display: flex;
@@ -16,6 +20,12 @@
 		background: $primary-color;
 		width: 200px;
 		height: 200px;
+
+		@media screen and (max-width: 728px) {
+			width: 150px;
+			height: 150px;
+			margin-top: 50px;
+	}
 	}
 
 	&__name {
@@ -30,6 +40,15 @@
 			font-size: 36px;
 			line-height: 42px;
 			padding: 5px 82px 2px 25px;
+
+			@media screen and (max-width: 728px) {
+					font-size: 18px;
+					padding: 5px 62px 2px 25px;
+			}
+			@media screen and (max-width: 376px) {
+				font-size: 14px;	
+				padding: 5px 28px 2px 25px;
+		}
 		}
 	}
 	&__strip {
@@ -44,12 +63,17 @@
 	&__name-team {
 		background: $primary-color;
 		padding: 24px 282px 24px 32px;
-	
+
 		& p {
 			font-size: 36px;
 			line-height: 42px;
 			white-space: pre;
 			color: $white;
+
+			@media screen and (max-width: 728px) {
+				font-size: 28px;
+				
+		}
 		}
 	}
 }

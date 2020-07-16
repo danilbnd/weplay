@@ -727,6 +727,11 @@ body, html {
   max-width: 600px;
   margin: 0 auto;
 }
+@media screen and (max-width: 728px) {
+  .db-player {
+    padding: 120px 20px;
+  }
+}
 .db-player__box {
   display: flex;
 }
@@ -734,6 +739,13 @@ body, html {
   background: #010E28;
   width: 200px;
   height: 200px;
+}
+@media screen and (max-width: 728px) {
+  .db-player__image-bg {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+  }
 }
 .db-player__name {
   background: #28C772;
@@ -747,6 +759,18 @@ body, html {
   font-size: 36px;
   line-height: 42px;
   padding: 5px 82px 2px 25px;
+}
+@media screen and (max-width: 728px) {
+  .db-player__name p {
+    font-size: 18px;
+    padding: 5px 62px 2px 25px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .db-player__name p {
+    font-size: 14px;
+    padding: 5px 28px 2px 25px;
+  }
 }
 .db-player__strip {
   position: absolute;
@@ -765,4 +789,9 @@ body, html {
   line-height: 42px;
   white-space: pre;
   color: #fff;
+}
+@media screen and (max-width: 728px) {
+  .db-player__name-team p {
+    font-size: 28px;
+  }
 }
